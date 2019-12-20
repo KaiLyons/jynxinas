@@ -1,0 +1,95 @@
+using namespace std;
+
+func operatorsAndMath(){
+    // Variables
+    var string inp;
+    var int j = 1;
+    var long f = 9659316459895867983242342 // Up to 25 spots
+    var char a = 'a';
+    var string asd = "asd is my string"
+
+    // Operators
+    var int a = 1 != 2; // Not Equals
+    var int b = 1 == 1; // == is used for numbers, = is used for assigning
+    var int two = 1 + 1;
+    var int c = 2 = !1; // Not
+    var int deptwo = 2--; // Decrement
+    var int incone = 1++; // Increment
+    var int four = 2^2;
+    var int d = 2 == 2 || 3; // Or 
+    var int e = bool(true) && 2 + 2; // And
+    var int g = 2 /= 6 // Divide then set variable to output
+    var int h = 2 *= 6 // Multiply then set variable to output
+    var int i = 2 -= 3 // Subtract then set var
+    var int k = 2 += 3 // Add then set var
+    var string also = "Don\'t forget, using the words for them work too";
+}
+
+func fibonacci(){
+    outbox(0);
+    outbox(1);
+    var int a = 1;
+    var int b = a + a;
+    outbox(a);
+    outbox(b);
+    while( a < 100000000 ){
+        var int a = a + b;
+        outbox(a);
+        var int b = a + b;
+        outbox(b);
+    }
+}
+
+func inputOutput(){
+    // Input
+    var string in;
+    inbox(in);
+    
+    //output
+    outbox(in, " Other String!");
+}
+
+func operatorsInWords(){
+    // Operators
+    var int a = 1 not equals 2; // Not Equals
+    var int two = 1 plus 1;
+    var int c = not 1; // Not
+    var int deptwo = decrement 2; // Decrement
+    var int incone = increment 1; // Increment
+    var int four = 2 topower 2;
+    var int d = 2 equals 2 or 3; // Or 
+    var int e = bool(true) and 2 + 2; // And
+    // You get the point
+}
+
+func ifStatement(){
+    var bool a = bool(false);
+    if(a = bool(true)){
+        var bool a = bool(false);
+    } else if (a = bool(false)){
+        var bool a = bool(true);
+    } else {
+        outbox("Idk what to do here");
+    }
+}
+
+func int intFunction(){
+    // code here
+    return 0;
+}
+
+func string returnString(){
+    if(bool(true)){
+        return string "Hello"
+    }
+}
+
+func callOther(){
+    outbox(returnString());
+    ifStatement()
+    belowToExplain()
+}
+
+func belowToExplain(){
+    outbox("Can also check lower functions");
+}
